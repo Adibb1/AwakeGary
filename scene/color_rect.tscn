@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dvahkwluerh6n" path="res://bg/sky2.jpg" id="1_mxsg8"]
 
-[node name="ColorRect" type="ColorRect" unique_id=1437418971]
+[node name="Bg" type="ColorRect" unique_id=1437418971]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

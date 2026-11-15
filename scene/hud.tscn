@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://c4auexw8xd8iv"]
+
+[ext_resource type="Script" uid="uid://b3fon71165axb" path="res://scripts/canvas_layer.gd" id="1_s3k51"]
+[ext_resource type="PackedScene" uid="uid://b7t3rwdmnhkw4" path="res://scene/color_rect.tscn" id="2_pvgpj"]
+[ext_resource type="Script" uid="uid://btumcmq4wg2wm" path="res://scripts/start_button.gd" id="3_nhyt6"]
+[ext_resource type="Texture2D" uid="uid://bmduvbr2vih22" path="res://Idle.png" id="4_nhyt6"]
+
+[sub_resource type="SystemFont" id="SystemFont_62yky"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_4kxuq"]
+font_size = 32
+shadow_size = 9
+shadow_color = Color(0.1680183, 0.1680183, 0.1680183, 0.85)
+
+[sub_resource type="Theme" id="Theme_4kxuq"]
+default_font_size = 0
+
+[sub_resource type="FontVariation" id="FontVariation_ry2h7"]
+variation_face_index = 3
+variation_embolden = 0.88
+spacing_glyph = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_mti6b"]
+font = SubResource("FontVariation_ry2h7")
+font_size = 64
+outline_size = 24
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.012920001, 0.012920001, 0.012920001, 0.94000006)
+shadow_offset = Vector2(8, 11)
+
+[node name="HUD" type="CanvasLayer" unique_id=490236882]
+script = ExtResource("1_s3k51")
+
+[node name="Bg" parent="." unique_id=1437418971 instance=ExtResource("2_pvgpj")]
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=2020637254]
+offset_left = 1040.0
+offset_top = 16.0
+offset_right = 1136.0
+offset_bottom = 72.0
+theme_override_fonts/font = SubResource("SystemFont_62yky")
+theme_override_font_sizes/font_size = 35
+text = "O"
+label_settings = SubResource("LabelSettings_4kxuq")
+horizontal_alignment = 2
+
+[node name="StartButton" type="Button" parent="." unique_id=593572949]
+offset_left = 384.0
+offset_top = 256.0
+offset_right = 768.0
+offset_bottom = 384.0
+theme = SubResource("Theme_4kxuq")
+theme_override_font_sizes/font_size = 32
+text = "START"
+script = ExtResource("3_nhyt6")
+
+[node name="Exit" type="Button" parent="." unique_id=741282084]
+offset_left = 384.0
+offset_top = 400.0
+offset_right = 768.0
+offset_bottom = 528.0
+theme = SubResource("Theme_4kxuq")
+theme_override_font_sizes/font_size = 32
+text = "EXIT"
+script = ExtResource("3_nhyt6")
+
+[node name="Message" type="Label" parent="." unique_id=227423557]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MessageTimer" type="Timer" parent="." unique_id=84971408]
+
+[node name="Label" type="Label" parent="." unique_id=790119846]
+offset_left = 288.0
+offset_top = 112.0
+offset_right = 856.0
+offset_bottom = 240.0
+text = "SlimeCat"
+label_settings = SubResource("LabelSettings_mti6b")
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1648516029]
+position = Vector2(191.99997, 432)
+rotation = 0.49741885
+scale = Vector2(3.0000002, 3.375)
+texture = ExtResource("4_nhyt6")
+hframes = 4
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1386470996]
+position = Vector2(1000, 504)
+rotation = 2.0943952
+scale = Vector2(3.0000002, 3.375)
+texture = ExtResource("4_nhyt6")
+hframes = 4
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=2037980245]
+position = Vector2(536.00006, 104)
+scale = Vector2(2.2499998, 2.0937498)
+texture = ExtResource("4_nhyt6")
+hframes = 4
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=951936367]
+position = Vector2(880, 216)
+rotation = -0.46251225
+scale = Vector2(3.0000002, 3.375)
+texture = ExtResource("4_nhyt6")
+hframes = 4
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]

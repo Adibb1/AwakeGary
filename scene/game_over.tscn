@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://vt68hty8ewps"]
+
+[ext_resource type="Script" uid="uid://b3xqh8ume1oqa" path="res://scripts/game_over.gd" id="1_bc2bx"]
+[ext_resource type="PackedScene" uid="uid://b7t3rwdmnhkw4" path="res://scene/color_rect.tscn" id="2_6pabp"]
+[ext_resource type="Script" uid="uid://btumcmq4wg2wm" path="res://scripts/start_button.gd" id="3_bc2bx"]
+
+[sub_resource type="Theme" id="Theme_8u835"]
+default_font_size = 0
+
+[sub_resource type="Theme" id="Theme_ftari"]
+default_font_size = 0
+
+[sub_resource type="FontVariation" id="FontVariation_62yky"]
+variation_face_index = 3
+variation_embolden = 0.88
+spacing_glyph = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_ccer4"]
+font = SubResource("FontVariation_62yky")
+font_size = 64
+outline_size = 24
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.012920001, 0.012920001, 0.012920001, 0.94000006)
+shadow_offset = Vector2(8, 11)
+
+[node name="GameOver" type="CanvasLayer" unique_id=363850771]
+script = ExtResource("1_bc2bx")
+
+[node name="Bg" parent="." unique_id=1437418971 instance=ExtResource("2_6pabp")]
+
+[node name="Exit" type="Button" parent="." unique_id=374458964]
+offset_left = 384.0
+offset_top = 400.0
+offset_right = 768.0
+offset_bottom = 528.0
+theme = SubResource("Theme_8u835")
+theme_override_font_sizes/font_size = 32
+text = "EXIT"
+script = ExtResource("3_bc2bx")
+
+[node name="Restart" type="Button" parent="." unique_id=1681315936]
+offset_left = 384.0
+offset_top = 256.0
+offset_right = 768.0
+offset_bottom = 384.0
+theme = SubResource("Theme_ftari")
+theme_override_font_sizes/font_size = 32
+text = "RESTART"
+script = ExtResource("3_bc2bx")
+
+[node name="Label" type="Label" parent="Restart" unique_id=1059881925]
+layout_mode = 0
+offset_left = -96.0
+offset_top = -176.0
+offset_right = 472.0
+offset_bottom = -48.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_ccer4")
+horizontal_alignment = 1
