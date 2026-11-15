@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b7t3rwdmnhkw4"]
+
+[ext_resource type="Texture2D" uid="uid://dvahkwluerh6n" path="res://bg/sky2.jpg" id="1_mxsg8"]
+
+[node name="ColorRect" type="ColorRect" unique_id=1437418971]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24313726, 0.74509805, 1, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1577255008]
+layout_mode = 0
+offset_top = 360.0
+offset_right = 1152.0
+offset_bottom = 650.0
+texture = ExtResource("1_mxsg8")
+expand_mode = 1
