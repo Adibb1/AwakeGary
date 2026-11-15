@@ -1,0 +1,9 @@
+res://scenes/Tree.tscn
+res://scenes/Cloud.tscn
+res://scripts/cloud.gd
+res://scenes/Game.tscn
+res://scripts/game.gd
+res://scripts/player.gd
+res://scripts/global.gd
+res://scripts/menu.gd
+res://scripts/hover_button.gd
