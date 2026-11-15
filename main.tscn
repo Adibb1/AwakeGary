@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dvk451nnc3jlk"]
+
+[ext_resource type="Script" uid="uid://xcxwhf8ocsnr" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cke8d7mit1goe" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://db5cm1f4xiqfd" path="res://cloud.tscn" id="3_1bvp3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(1160, 248)
+
+[node name="Main" type="Node2D" unique_id=1681280956]
+script = ExtResource("1_h2yge")
+
+[node name="Player" parent="." unique_id=335780901 instance=ExtResource("2_0xm2m")]
+z_index = 1
+position = Vector2(175, 274)
+
+[node name="GameArea" type="StaticBody2D" parent="." unique_id=1186964742]
+position = Vector2(-34, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameArea" unique_id=100141456]
+position = Vector2(578, 715)
+shape = SubResource("RectangleShape2D_4kxuq")
+debug_color = Color(0.30255318, 0.6279105, 0, 0.42)
+
+[node name="ColorRect" type="ColorRect" parent="GameArea" unique_id=1760392087]
+offset_left = -96.0
+offset_top = 592.0
+offset_right = 1311.0
+offset_bottom = 1010.0
+color = Color(0, 1, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2131162550]
+position = Vector2(573, 331)
+
+[node name="Cloud" parent="." unique_id=1112050592 instance=ExtResource("3_1bvp3")]
