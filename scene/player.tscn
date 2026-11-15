@@ -12,6 +12,8 @@ position = Vector2(339, 289)
 scale = Vector2(5, 5)
 
 [node name="Obstacles" type="StaticBody2D" parent="." unique_id=610561859]
+position = Vector2(200, 0)
+scale = Vector2(0.8, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles" unique_id=1117055129]
 position = Vector2(573.5, 534.5)
@@ -24,7 +26,7 @@ offset_right = 1190.0
 offset_bottom = 649.5
 color = Color(0.36370194, 0.51148087, 0.6996351, 1)
 
-[node name="Obstacles2" type="StaticBody2D" parent="." unique_id=2065404556]
+[node name="Obstacles2" type="StaticBody2D" parent="." unique_id=2065404556 groups=["obstacles"]]
 position = Vector2(461.99997, 150.99997)
 scale = Vector2(0.4, 0.4)
 
