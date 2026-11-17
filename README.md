@@ -31,7 +31,7 @@ AwakeGary is a 2D arcade platformer built over 48 hours at **Haven KL** (Hack Cl
 ## Running Locally
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Adibb1/AwakeGary.git](https://github.com/Adibb1/AwakeGary.git)
+   git clone https://github.com/Adibb1/AwakeGary.git
    ```
 2. Open Godot Engine and click Import.
 
