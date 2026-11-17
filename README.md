@@ -2,9 +2,9 @@
 
 A 2D physics-based platformer built in Godot Engine featuring Gary, a cat navigating dynamically spawned obstacles using charge-jump mechanics.
 
-🎮 **Playable Build:**[itch.io](https://adibb1.itch.io/awakegary)
+🎮 **Playable Build:** [itch.io](https://adibb1.itch.io/awakegary)
 
-![AwakeGary Gameplay](docs/gameplay.gif)
+![AwakeGary Gameplay](docs/gameplay.png)
 
 ## Overview
 AwakeGary is a 2D arcade platformer built over 48 hours at **Haven KL** (Hack Club's game jam at Microsoft Malaysia, Menara Shell). Players control Gary, holding and releasing input to charge jumps across varying distances while avoiding incoming obstacles.
