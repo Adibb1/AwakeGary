@@ -1,20 +1,33 @@
-# Awake Gary - Sky Jump
+# AwakeGary
 
-A Pou-style "Sky Jump" climbing minigame for Godot 4 (4.2 or newer).
+A 2D physics-based platformer built in Godot Engine featuring Gary, a cat navigating dynamically spawned obstacles using charge-jump mechanics.
 
-Run: open Godot -> Import -> select project.godot -> Import & Edit -> press F5.
+🎮 **Playable Build:** [Insert itch.io URL]
 
-Controls
-- A / D or Left / Right arrows: move (you wrap around the screen edges)
-- SPACE: hold to charge (Gary squishes), release to jump. Longer hold = higher jump
-- ESC: back to the menu, R: restart after game over
+![AwakeGary Gameplay](docs/gameplay.gif)
 
-Rules
-- Climb as high as you can. Trees are permanent, white clouds melt about 1 second after you land, black clouds kill you.
-- Falling off the bottom of the screen ends the game. The sky turns to space as you climb.
+## Overview
+AwakeGary is a 2D arcade platformer built over 48 hours at **Haven KL** (Hack Club's game jam at Microsoft Malaysia, Menara Shell). Players control Gary, holding and releasing input to charge jumps across varying distances while avoiding incoming obstacles.
 
-Credits (assets from github.com/Adibb1/AwakeGary)
-- Gary the cat sprites: main branch
-- Cloud sprites: nabil branch
-- Main menu sky and music: eiz branch
-- Tree sprite: newly drawn for this project
+## Key Mechanics & Features
+- **Charge-Jump Physics:** Variable jump force calculated from hold duration, requiring precise timing and trajectory control.
+- **Dynamic Obstacle Spawning:** Procedural obstacle generation that scales pacing and keeps runs unpredictable.
+- **2D Sprite Animations:** State-driven `AnimatedSprite2D` transitions for idle, charge-up, mid-air jump, and landing states.
+- **Quick Restart Loop:** Instant collision detection, score tracking, and zero-delay run resets.
+
+## Controls
+| Action | Input |
+| :--- | :--- |
+| Charge Jump (Hold) | `Space` / `Left Mouse Button` |
+| Jump (Release) | Release `Space` / `Left Mouse Button` |
+| Restart Run | `R` |
+
+## Tech Stack
+- **Engine:** Godot Engine 4
+- **Language:** GDScript
+- **Art & Audio:** 2D Sprite Sheets & Custom Sound Effects
+
+## Running Locally
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Adibb1/AwakeGary.git](https://github.com/Adibb1/AwakeGary.git)
