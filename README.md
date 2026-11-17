@@ -18,7 +18,7 @@ AwakeGary is a 2D arcade platformer built over 48 hours at **Haven KL** (Hack Cl
 ## Controls
 | Action | Input |
 | :--- | :--- |
-| Moveing | `A` \ `D` \ `Left Arrow` \ `Right Arrow` |
+| Move | `A` \ `D` \ `Left Arrow` \ `Right Arrow` |
 | Charge Jump (Hold) | `Space` |
 | Jump (Release) | Release `Space` |
 | Restart Run | `Esc` |
