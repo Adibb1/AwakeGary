@@ -39,5 +39,5 @@ AwakeGary is a 2D arcade platformer built over 48 hours at **Haven KL** (Hack Cl
 
 4. Press F5 (or click Run Project) to launch the game.
 
-##Credits
+## Credits
 Built by Me, Nabil and Eizdihar during Haven KL 2026.
