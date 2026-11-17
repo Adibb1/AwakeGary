@@ -2,7 +2,7 @@
 
 A 2D physics-based platformer built in Godot Engine featuring Gary, a cat navigating dynamically spawned obstacles using charge-jump mechanics.
 
-🎮 **Playable Build:** [Insert itch.io URL]
+🎮 **Playable Build:**(https://adibb1.itch.io/awakegary)
 
 ![AwakeGary Gameplay](docs/gameplay.gif)
 
